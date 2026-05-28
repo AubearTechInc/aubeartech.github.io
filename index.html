@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Aubear — Ethereum Infrastructure for Autonomous Agents</title>
+<meta name="description" content="Aubear builds Ethereum infrastructure for AI agents, including EthNodes — private RPC nodes for Ethereum agentic applications." />
+<meta name="theme-color" content="#070A12" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="canonical" href="https://aubear.tech/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Aubear" />
+<meta property="og:title" content="Aubear — Powering the Ethereum Agentic Economy" />
+<meta property="og:description" content="Private RPC access, agent-ready tools, and verifiable workflows for AI agents using Ethereum." />
+<meta property="og:url" content="https://aubear.tech/" />
+<meta property="og:image" content="assets/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Aubear — Powering the Ethereum Agentic Economy" />
+<meta name="twitter:description" content="Private RPC access, agent-ready tools, and verifiable workflows for AI agents using Ethereum." />
+<meta name="twitter:image" content="assets/og-image.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;450;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Aubear",
+  "description": "Ethereum infrastructure for autonomous agents.",
+  "url": "https://aubear.tech/"
+}
+</script>
+</head>
+<body>
+<div class="bg-field" aria-hidden="true"></div>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav" aria-label="Primary">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Aubear home">
+      <img src="assets/aubearlogowhite.png" alt="Aubear" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="#suite">Products</a></li>
+      <li><a href="https://ethnodes.com" target="_blank" rel="noopener">EthNodes <svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a class="btn btn-primary btn-sm" href="https://ethnodes.com" target="_blank" rel="noopener">Start with EthNodes</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu"><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#suite">Products</a>
+  <a href="https://ethnodes.com" target="_blank" rel="noopener">EthNodes ↗</a>
+  <a href="#roadmap">Roadmap</a>
+  <a href="#contact">Contact</a>
+  <a class="btn btn-primary" href="https://ethnodes.com" target="_blank" rel="noopener">Start with EthNodes</a>
+</div>
+
+<main id="top">
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero wrap" data-screen-label="Hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="kicker reveal">Ethereum infrastructure for autonomous agents</span>
+        <h1 class="reveal d1">Powering the <span class="grad">Ethereum&nbsp;agentic economy</span></h1>
+        <p class="lead reveal d2">Aubear builds Ethereum infrastructure for AI agents — private RPC access, agent-ready tools, and verifiable onchain workflows.</p>
+        <div class="hero-cta reveal d2">
+          <a class="btn btn-primary" href="https://ethnodes.com" target="_blank" rel="noopener">Start with EthNodes
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#suite">Explore the suite</a>
+        </div>
+        <p class="status-line reveal d3"><span class="status-dot"></span><span><b>EthNodes is live.</b>&nbsp; Agent tools and receipts are in development.</span></p>
+      </div>
+
+      <!-- Hero diagram: Agents -> Aubear -> Ethereum -->
+      <div class="diagram reveal d2" role="img" aria-label="Diagram: AI agents connect through Aubear's agentic infrastructure — EthNodes RPC, Agent Tools, and Agent Receipts — to Ethereum.">
+        <span class="dg-label">AI Agents</span>
+        <div class="dg-node dg-agents">
+          <span class="chip"><span class="gd"></span>Claude</span>
+          <span class="chip"><span class="gd"></span>Cursor</span>
+          <span class="chip"><span class="gd"></span>Custom agents</span>
+          <span class="chip"><span class="gd"></span>Automation scripts</span>
+        </div>
+
+        <div class="dg-link"></div>
+
+        <div class="dg-node dg-core">
+          <div class="dg-core-head">
+            <img src="assets/aubear-logo-white.png" alt="" aria-hidden="true" />
+            <span class="t">Agentic Infrastructure</span>
+          </div>
+          <div class="dg-rows">
+            <div class="dg-row">
+              <span class="nm"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01M7 16.5h.01"/></svg>EthNodes&nbsp;RPC</span>
+              <span class="tag live">Live</span>
+            </div>
+            <div class="dg-row">
+              <span class="nm"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg>Agent&nbsp;Tools</span>
+              <span class="tag dev">In dev</span>
+            </div>
+            <div class="dg-row">
+              <span class="nm"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v18l2-1.4 2 1.4 2-1.4 2 1.4 2-1.4 2 1.4V3l-2 1.4L15 3l-2 1.4L11 3 9 4.4 7 3Z"/><path d="M9 8h6M9 12h6"/></svg>Agent&nbsp;Receipts</span>
+              <span class="tag">Research</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dg-link l2"></div>
+
+        <div class="dg-node dg-eth">
+          <svg class="diamond" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M12 2 5 12l7 4 7-4Z"/><path d="m5 13.5 7 8.5 7-8.5-7 4Z"/></svg>
+          <div>
+            <div class="et">Ethereum</div>
+            <div class="es">Mainnet · L2s · Contracts · Stablecoins</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== THESIS ===================== -->
+  <section id="thesis" data-screen-label="Thesis">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker reveal">The thesis</span>
+        <h2 class="reveal d1">AI agents are becoming Ethereum users</h2>
+        <p class="lead reveal d2">Autonomous agents can read data, call APIs, pay for services, prepare transactions, and coordinate workflows. But most Ethereum infrastructure was designed for humans, wallets, and applications — not autonomous software that needs reliable access, structured tools, and verifiable records.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card reveal">
+          <div class="ic-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div>
+          <h3>Private access</h3>
+          <p>Agents need RPC endpoints that are simple, private, and not tied to consumer wallet defaults.</p>
+        </div>
+        <div class="card reveal d1">
+          <div class="ic-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4H6a2 2 0 0 0-2 2v3a2 2 0 0 1-2 2 2 2 0 0 1 2 2v3a2 2 0 0 0 2 2h2M16 4h2a2 2 0 0 1 2 2v3a2 2 0 0 0 2 2 2 2 0 0 0-2 2v3a2 2 0 0 1-2 2h-2"/></svg></div>
+          <h3>Machine-readable tools</h3>
+          <p>Agents need Ethereum capabilities exposed as APIs, MCP tools, structured responses, and reproducible outputs.</p>
+        </div>
+        <div class="card reveal d2">
+          <div class="ic-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 7.5 8 9 4.5-1.5 8-4 8-9V6Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>Verifiable workflows</h3>
+          <p>When agents interact with Ethereum, developers need logs, receipts, and evidence of what was requested, checked, and produced.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SUITE ===================== -->
+  <section id="suite" data-screen-label="Product suite">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker reveal">Product suite</span>
+        <h2 class="reveal d1">The Aubear agentic infrastructure suite</h2>
+        <p class="lead reveal d2">A growing suite of Ethereum-native products for agent developers, autonomous workflows, and onchain applications.</p>
+      </div>
+      <div class="suite-grid">
+
+        <!-- EthNodes -->
+        <article class="product featured reveal">
+          <div class="product-top">
+            <span class="badge live">Live</span>
+            <span class="pnum">01 / 03</span>
+          </div>
+          <h3>EthNodes</h3>
+          <p class="sub">RPC nodes for your Ethereum agents</p>
+          <p class="desc">Private, affordable Ethereum RPC endpoints for agentic apps, scripts, wallets, MCP servers, and autonomous workflows.</p>
+          <ul class="feat-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Dedicated Ethereum RPC URLs</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Privacy-first defaults</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Crypto payments</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Simple pricing</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Built for agents and developers</li>
+          </ul>
+          <div class="pcta">
+            <a class="btn btn-primary" href="https://ethnodes.com" target="_blank" rel="noopener">Visit EthNodes
+              <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Agent Tools -->
+        <article class="product dimmed reveal d1">
+          <div class="product-top">
+            <span class="badge dev">In development</span>
+            <span class="pnum">02 / 03</span>
+          </div>
+          <h3>Agent Tools</h3>
+          <p class="sub">Ethereum tools exposed through MCP and APIs</p>
+          <p class="desc">Give agents reliable Ethereum capabilities such as ENS resolution, contract reads, transaction preparation, calldata decoding, and structured onchain responses.</p>
+          <ul class="feat-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>MCP-compatible Ethereum tools</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Structured JSON outputs</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Read-first design</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Works with agent frameworks</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Built for automation workflows</li>
+          </ul>
+          <div class="pcta"><span class="btn btn-disabled">Coming soon</span></div>
+        </article>
+
+        <!-- Agent Receipts -->
+        <article class="product dimmed reveal d2">
+          <div class="product-top">
+            <span class="badge research">Research</span>
+            <span class="pnum">03 / 03</span>
+          </div>
+          <h3>Agent Receipts</h3>
+          <p class="sub">Verifiable records for autonomous work</p>
+          <p class="desc">Create machine-readable receipts for agent workflows, including inputs, outputs, checks, transaction hashes, and reproducibility metadata.</p>
+          <ul class="feat-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Workflow receipts</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Agent action logs</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Input / output hashes</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Optional onchain references</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Built for auditability</li>
+          </ul>
+          <div class="pcta"><span class="btn btn-disabled">Research in progress</span></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ETHNODES FEATURE ===================== -->
+  <section id="ethnodes" class="ethnodes" data-screen-label="EthNodes feature">
+    <div class="wrap">
+      <div class="eth-layout">
+        <div class="eth-intro">
+          <span class="kicker reveal">EthNodes · Live</span>
+          <h2 class="reveal d1" style="margin-top:16px;">Start with private RPC for your agents</h2>
+          <p class="lead reveal d2" style="margin-top:18px;">EthNodes gives your agentic apps a direct Ethereum RPC endpoint without forcing you into a large infrastructure platform. Simple access, transparent pricing, and privacy-first defaults.</p>
+
+          <div class="terminal reveal d2">
+            <div class="term-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="fn">agent.ts</span></div>
+            <div class="term-body">
+<div class="ln"><span class="c-com">// point any web3 client at your EthNodes URL</span></div>
+<div class="ln"><span class="c-key">const</span> <span class="c-dim">client</span> = <span class="c-fn">createPublicClient</span>({</div>
+<div class="ln">  <span class="c-dim">transport</span>: <span class="c-fn">http</span>(<span class="c-str">"https://rpc.ethnodes.com/your-key"</span>)</div>
+<div class="ln">});</div>
+<div class="ln"> </div>
+<div class="ln"><span class="c-key">const</span> <span class="c-dim">balance</span> = <span class="c-key">await</span> <span class="c-dim">client</span>.<span class="c-fn">getBalance</span>({ <span class="c-dim">address</span> });</div>
+<div class="ln"><span class="c-com">// → agent reads Ethereum. private. yours.</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="eth-features reveal d1">
+          <div class="eth-feat">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v3"/><rect x="4" y="7" width="16" height="6" rx="2"/><path d="M12 13v4a2 2 0 0 1-2 2H7"/><circle cx="7" cy="19" r="1.5"/></svg></div>
+            <h3>Agent-ready RPC</h3>
+            <p>Use EthNodes with Web3 libraries, wallets, scripts, MCP servers, and autonomous applications.</p>
+          </div>
+          <div class="eth-feat">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0l-7.2-7.2A2 2 0 0 1 3 12V5a2 2 0 0 1 2-2h7a2 2 0 0 1 1.4.6l7.2 7.2a2 2 0 0 1 0 2.6Z"/><circle cx="7.5" cy="7.5" r="1.3"/></svg></div>
+            <h3>Simple pricing</h3>
+            <p>Start small without negotiating enterprise contracts or committing to a large infrastructure platform.</p>
+          </div>
+          <div class="eth-feat">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.5" r="1.2"/></svg></div>
+            <h3>Privacy-first defaults</h3>
+            <p>Built for developers who want private Ethereum access for their applications and agents.</p>
+          </div>
+          <div class="eth-feat">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M12 2 5 12l7 4 7-4Z"/><path d="m5 13.5 7 8.5 7-8.5-7 4Z"/></svg></div>
+            <h3>Ethereum focused</h3>
+            <p>A focused RPC product for Ethereum workflows, not a generic cloud dashboard.</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal d2" style="margin-top:40px;">
+        <a class="btn btn-primary" href="https://ethnodes.com" target="_blank" rel="noopener">Launch EthNodes
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STACK DIAGRAM ===================== -->
+  <section id="stack" data-screen-label="Stack">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker reveal">The stack</span>
+        <h2 class="reveal d1">An Ethereum stack for autonomous software</h2>
+        <p class="lead reveal d2">Aubear focuses on the layer between AI agents and Ethereum — where access, tools, payments, and verification become machine-readable.</p>
+      </div>
+      <div class="stack">
+        <div class="layer reveal">
+          <div class="layer-title"><span class="lt">Agent Applications</span><span class="ln">Layer 01</span></div>
+          <div class="layer-items">
+            <span class="pill">Claude</span>
+            <span class="pill">Cursor</span>
+            <span class="pill">Custom agents</span>
+            <span class="pill">Automation scripts</span>
+          </div>
+          <span class="connector"></span>
+        </div>
+        <div class="layer core reveal d1">
+          <div class="layer-title"><span class="lt">Aubear Agentic Infrastructure</span><span class="ln">Layer 02 · the focus</span></div>
+          <div class="layer-items">
+            <span class="pill b">EthNodes RPC <span class="st">live</span></span>
+            <span class="pill b">Agent Tools <span class="st">in dev</span></span>
+            <span class="pill b">Agent Receipts <span class="st">research</span></span>
+          </div>
+          <span class="connector"></span>
+        </div>
+        <div class="layer reveal d2">
+          <div class="layer-title"><span class="lt">Ethereum Access Layer</span><span class="ln">Layer 03</span></div>
+          <div class="layer-items">
+            <span class="pill">RPC</span>
+            <span class="pill">Contracts</span>
+            <span class="pill">Events</span>
+            <span class="pill">Balances</span>
+            <span class="pill">Transactions</span>
+          </div>
+          <span class="connector"></span>
+        </div>
+        <div class="layer reveal d3">
+          <div class="layer-title"><span class="lt">Ethereum Network</span><span class="ln">Layer 04</span></div>
+          <div class="layer-items">
+            <span class="pill">Mainnet</span>
+            <span class="pill">L2s</span>
+            <span class="pill">Smart contracts</span>
+            <span class="pill">Stablecoins</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== USE CASES ===================== -->
+  <section id="usecases" data-screen-label="Use cases">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker reveal">Use cases</span>
+        <h2 class="reveal d1">What agents can build with Aubear</h2>
+      </div>
+      <div class="grid-4">
+        <div class="card reveal">
+          <div class="ic-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+          <h3>Research agents</h3>
+          <p>Read balances, resolve ENS, inspect contracts, and retrieve Ethereum data through structured tools.</p>
+        </div>
+        <div class="card reveal d1">
+          <div class="ic-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2.5"/><path d="M2 10h20M6 15h4"/></svg></div>
+          <h3>Payment agents</h3>
+          <p>Use Ethereum RPC access and future payment workflows to support agents that pay for APIs, services, and data.</p>
+        </div>
+        <div class="card reveal d2">
+          <div class="ic-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="m7 9 3 3-3 3M13 15h4"/></svg></div>
+          <h3>Ops agents</h3>
+          <p>Prepare structured outputs, transaction payloads, logs, and receipts for human review.</p>
+        </div>
+        <div class="card reveal d3">
+          <div class="ic-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg></div>
+          <h3>Developer agents</h3>
+          <p>Give coding agents Ethereum-aware primitives for building, testing, and integrating onchain applications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ROADMAP ===================== -->
+  <section id="roadmap" data-screen-label="Roadmap">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker reveal">Where we're headed</span>
+        <h2 class="reveal d1">Roadmap</h2>
+      </div>
+      <div class="roadmap-grid">
+        <div class="road-col now reveal">
+          <div class="road-head"><span class="rt">Now</span><span class="badge live">Shipping</span></div>
+          <ul class="road-list">
+            <li><span class="mk"></span>EthNodes private Ethereum RPC</li>
+            <li><span class="mk"></span>Agent-ready RPC positioning</li>
+            <li><span class="mk"></span>Developer onboarding</li>
+            <li><span class="mk"></span>Simple pricing and crypto payments</li>
+          </ul>
+        </div>
+        <div class="road-col next reveal d1">
+          <div class="road-head"><span class="rt">Next</span><span class="badge dev">Building</span></div>
+          <ul class="road-list">
+            <li><span class="mk"></span>MCP Ethereum tools</li>
+            <li><span class="mk"></span>Hosted agent endpoints</li>
+            <li><span class="mk"></span>Structured Ethereum responses</li>
+            <li><span class="mk"></span>Usage and workflow logs</li>
+          </ul>
+        </div>
+        <div class="road-col later reveal d2">
+          <div class="road-head"><span class="rt">Later</span><span class="badge research">Exploring</span></div>
+          <ul class="road-list">
+            <li><span class="mk"></span>Agent payment workflows</li>
+            <li><span class="mk"></span>Verifiable task receipts</li>
+            <li><span class="mk"></span>Ethereum agent tool marketplace</li>
+            <li><span class="mk"></span>Cross-agent workflow infrastructure</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FINAL CTA ===================== -->
+  <section id="contact" data-screen-label="Final CTA">
+    <div class="wrap">
+      <div class="final reveal">
+        <span class="kicker">Get started</span>
+        <h2 style="margin-top:16px;">Build for agents that use Ethereum</h2>
+        <p class="lead">Aubear is building the infrastructure layer for autonomous software that reads, reasons, pays, and coordinates on Ethereum.</p>
+        <div class="final-cta">
+          <a class="btn btn-primary" href="https://ethnodes.com" target="_blank" rel="noopener">Explore EthNodes
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="mailto:hello@aubear.tech">Contact Aubear</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/aubearlogowhite.png" alt="Aubear" />
+        <p>Ethereum infrastructure for autonomous agents.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="https://ethnodes.com" target="_blank" rel="noopener">EthNodes</a></li>
+            <li><a href="#suite">Products</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#thesis">Thesis</a></li>
+            <li><a href="#stack">The stack</a></li>
+            <li><a href="mailto:hello@aubear.tech">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Aubear Tech. All rights reserved.</p>
+      <p>Built for the Ethereum agentic economy.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
