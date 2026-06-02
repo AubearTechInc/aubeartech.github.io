@@ -512,7 +512,7 @@ body.menu-open .mobile-menu { opacity: 1; transform: translateY(0); pointer-even
 .feat-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: var(--text-dim); }
 .feat-list li svg { width: 15px; height: 15px; margin-top: 3px; color: var(--blue); flex: none; }
 .product.dimmed .feat-list li svg { color: var(--text-faint); }
-.product .pcta { margin-top: 22px; }
+.product .pcta { margin-top: auto; padding-top: 22px; }
 .product .pcta .btn { width: 100%; justify-content: center; }
 .btn-disabled { background: rgba(255,255,255,0.03); border: 1px solid var(--border); color: var(--text-faint); cursor: default; }
 .btn-disabled:hover { transform: none; }
